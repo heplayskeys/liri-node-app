@@ -1,46 +1,76 @@
+SPOTIFY
+Artist: Harry Styles
+Song: Sign of the Times
+Album: Harry Styles
+Listen Here: https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN
+
+SPOTIFY
+Artist: Jeremih
+Song: The Light
+Album: The Light
+Listen Here: https://open.spotify.com/track/3oCJJksC12uFxkt3RQ7rbV
+
+SPOTIFY
+Artist: Ty Dolla $ign
+Song: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) - Remix
+Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
+Listen Here: https://open.spotify.com/track/7t2bFihaDvhIrd2gn2CWJO
+
+SPOTIFY
+Artist: Jeremih
+Song: Impatient
+Album: Late Nights: The Album
+Listen Here: https://open.spotify.com/track/3WjyiSbfR74pjWXQ3IaFKJ
+
+SPOTIFY
+Song: Love U Better (feat. Lil Wayne & The-Dream)
+Artist: Ty Dolla $ign
+Album: Beach House 3
+Listen Here: https://open.spotify.com/track/270aLuFCbX32hhBr8MQyPM
+
 OMDB
-Title: Avatar
+Title: Mr. Nobody
 Release Year: 2009
-IMDB Rating: 7.8
-Language: English, Spanish
-Plot: A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.
-Actors: Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang
+IMDB Rating: 7.9
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 
 OMDB
 Title: Fight Club
-Release Year: 1999
 IMDB Rating: 8.8
+Release Year: 1999
 Language: English
 Plot: An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
 Actors: Edward Norton, Brad Pitt, Meat Loaf, Zach Grenier
 
 SPOTIFY
 Artist: The Beatles
-Album: Magical Mystery Tour (Remastered)
 Song: I Am The Walrus - Remastered 2009
+Album: Magical Mystery Tour (Remastered)
 Listen Here: https://open.spotify.com/track/6Pq9MmkDQYZiiCDpxnvrf6
 
 SPOTIFY
 Artist: The Beatles
 Song: I Am The Walrus
+Album: Love
 Listen Here: https://open.spotify.com/track/7qUPlJTYxDRnpw3FKoWhm1
 
 SPOTIFY
 Artist: Bono
+Song: I Am The Walrus - From "Across The Universe" Soundtrack
 Album: Across The Universe
-Album: Love
-Artist: The Beatles
 Listen Here: https://open.spotify.com/track/2TMopbHDXxeKLejZrBjX7g
 
-Song: I Am The Walrus - Remastered
 SPOTIFY
+Artist: The Beatles
+Song: I Am The Walrus - Remastered
 Album: The Beatles 1967 - 1970 (Remastered)
-Song: I Am The Walrus - From "Across The Universe" Soundtrack
-Artist: Oasis
+SPOTIFY
 Listen Here: https://open.spotify.com/track/01p2T2WtAGVbjnNhNHZfiA
 
-Album: The Masterplan
+Artist: Oasis
 Song: I Am The Walrus [Live]
+Album: The Masterplan
 Listen Here: https://open.spotify.com/track/10HhVxBvdBkK1VHdYNZPQo
 
-SPOTIFY

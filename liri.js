@@ -14,6 +14,22 @@ var action = userInput[0];
 var item = userInput.slice(1).join(" ");
 
 
+if (action === "spotify-this-song" && item === "") {
+
+    item = "the sign";
+    run(action, item);
+}
+else if (action === "movie-this" && item === "") {
+
+    item = "mr nobody";
+    run(action, item);
+}
+else {
+
+    run(action, item);
+}
+
+
 function run(action, item) {
 
     switch (action) {
@@ -55,6 +71,7 @@ function run(action, item) {
         break;
 
         case "spotify-this-song":
+
             // Search Spotify via spotify-this-song <song name here>
             spotify.search({type: "track", query: item, limit: 5}, function(err, res) {
             
@@ -166,5 +183,3 @@ function appendDoc(text) {
         }
     });
 }
-
-run(action, item);
