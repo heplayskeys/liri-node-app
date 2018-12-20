@@ -9,14 +9,19 @@ var spotify = new spotifyWebApi(keys.spotify);
 var fs = require("fs");
 
 
+// Gather command line input for subsequent "run" function
 var userInput = process.argv.slice(2);
 var action = userInput[0];
 var item = userInput.slice(1).join(" ");
 
+// Increment used for calling "appendDoc" function
+var j = 0;
 
+
+// Conditional check for command line input -- if none, defaults are used, where applicable
 if (action === "spotify-this-song" && item === "") {
 
-    item = "the sign";
+    item = "ace of base the sign";
     run(action, item);
 }
 else if (action === "movie-this" && item === "") {
@@ -35,18 +40,17 @@ function run(action, item) {
     switch (action) {
 
         case "concert-this":
-            // Search Bands in Town API via concert-this <artist/band name here>
-            axios.get("https://rest.bandsintown.com/artists/" + item + "/events?app_id=codingbootcamp").then(function(res) {
-                console.log(res.data.length);
+            // Search Bands in Town API via concert-this <artist/band name here> -- date range applied to reduce results
+            axios.get("https://rest.bandsintown.com/artists/" + item + "/events?date=2019-01-01,2019-02-28&app_id=codingbootcamp").then(function(res) {
             
-                for (var i = 0; i < res.data.length; i++) {
+                if (j < res.data.length) {
             
-                    var data = res.data[i];
+                    var data = res.data[j];
                     var eventDate = moment(data.datetime).format("MM/DD/YYYY");
             
                     console.log("Venue: " + data.venue.name);
                     console.log("Location: " + data.venue.city + ", " + data.venue.country);
-                    console.log("Event Date: " + eventDate + "\n");
+                    console.log("Event Date: " + eventDate);
                     console.log("----------------------------\n");
 
                     var resReturn = {
@@ -58,14 +62,9 @@ function run(action, item) {
 
                     var values = Object.values(resReturn);
 
-                    for (var j = 0; j < values.length; j++) {
-                        console.log(values[j]);
-                        appendDoc(values[j]);
-
-                        if (j === values.length - 1) {
-                            console.log("Content Added!\n");
-                        }
-                    }
+                    appendDoc(values, 0);
+                    j++;
+                    run(action, item);
                 }
             });
         break;
@@ -80,14 +79,14 @@ function run(action, item) {
                 }
                 else {
             
-                    for (var i = 0; i < res.tracks.items.length; i++) {
+                    if (j < res.tracks.items.length) {
             
-                        var response = res.tracks.items[i];
+                        var response = res.tracks.items[j];
             
                         console.log("Artist: " + response.artists[0].name);
                         console.log("Song: " + response.name);
                         console.log("Album: " + response.album.name);
-                        console.log("Listen Here: " + response.external_urls.spotify + "\n");
+                        console.log("Listen Here: " + response.external_urls.spotify);
                         console.log("----------------------------\n");
 
                         var resReturn = {
@@ -100,14 +99,9 @@ function run(action, item) {
 
                         var values = Object.values(resReturn);
 
-                        for (var j = 0; j < values.length; j++) {
-                            console.log(values[j]);
-                            appendDoc(values[j]);
-    
-                            if (j === values.length - 1) {
-                                console.log("Content Added!\n");
-                            }
-                        }
+                        appendDoc(values, 0);
+                        j++;
+                        run(action, item);
                     }
                 }
             });
@@ -133,26 +127,34 @@ function run(action, item) {
                 console.log("Actors: " + response.Actors);
                 console.log("----------------------------\n");
 
-                var resReturn = {
-                    resource: "OMDB",
-                    title: "Title: " + response.Title,
-                    year: "Release Year: " + response.Year,
-                    imdb: "IMDB Rating: " + response.imdbRating,
-                    // tomatoes: "Rotten Tomatoes Rating: " + response.Ratings[1].Value,
-                    language: "Language: " + response.Language,
-                    plot: "Plot: " + response.Plot,
-                    actors: "Actors: " + response.Actors + "\n"
-                };
+                // Conditional check to include Rotten Tomatoes rating, if available -- else, omit the rating
+                if (response.Ratings[1] !== undefined) {
+                    var resReturn = {
+                        resource: "OMDB",
+                        title: "Title: " + response.Title,
+                        year: "Release Year: " + response.Year,
+                        imdb: "IMDB Rating: " + response.imdbRating,
+                        tomatoes: "Rotten Tomatoes Rating: " + response.Ratings[1].Value,
+                        language: "Language: " + response.Language,
+                        plot: "Plot: " + response.Plot,
+                        actors: "Actors: " + response.Actors + "\n"
+                    };
+                }
+                else {
+                    var resReturn = {
+                        resource: "OMDB",
+                        title: "Title: " + response.Title,
+                        year: "Release Year: " + response.Year,
+                        imdb: "IMDB Rating: " + response.imdbRating,
+                        language: "Language: " + response.Language,
+                        plot: "Plot: " + response.Plot,
+                        actors: "Actors: " + response.Actors + "\n"
+                    };
+                }
 
                 var values = Object.values(resReturn);
 
-                for (var j = 0; j < values.length; j++) {
-                    appendDoc(values[j]);
-
-                    if (j === values.length - 1) {
-                        console.log("Content Added!\n");
-                    }
-                }
+                appendDoc(values, 0);
             });
         break;
 
@@ -174,12 +176,21 @@ function run(action, item) {
     }
 }
 
-function appendDoc(text) {
-    
-    fs.appendFile("log.txt", (text + "\n"), function(err) {
+function appendDoc(text, n) {
 
-        if (err) {
-            console.log("Error occurred: " + err);
-        }
-    });
+    if (n < text.length) {
+        
+        fs.appendFile("log.txt", (text[n]) + "\n", function(err) {
+
+            if (err) {
+                console.log("Error occurred: " + err);
+            }
+            else {
+                appendDoc(text, (n + 1));
+            }
+        });
+    }
+    else {
+        console.log("Content Added!\n");
+    }
 }

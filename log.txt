@@ -1,76 +1,58 @@
-SPOTIFY
-Artist: Harry Styles
-Song: Sign of the Times
-Album: Harry Styles
-Listen Here: https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN
+BANDS IN TOWN
+Venue: Jeff Tweedy Solo at Englert Theatre
+Location: Iowa City, United States
+Event Date: 02/27/2019
+
+BANDS IN TOWN
+Venue: Jeff Tweedy Solo at The Pageant
+Location: St. Louis, United States
+Event Date: 02/28/2019
 
 SPOTIFY
-Artist: Jeremih
-Song: The Light
-Album: The Light
-Listen Here: https://open.spotify.com/track/3oCJJksC12uFxkt3RQ7rbV
+Artist: Nine Inch Nails
+Song: The Hand That Feeds
+Album: With Teeth
+Listen Here: https://open.spotify.com/track/5ugzDiilhy6ILKmKfhEzd7
 
 SPOTIFY
-Artist: Ty Dolla $ign
-Song: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) - Remix
-Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
-Listen Here: https://open.spotify.com/track/7t2bFihaDvhIrd2gn2CWJO
+Artist: Nine Inch Nails
+Song: The Hand That Feeds - Photek Straight Mix
+Album: Every Day Is Exactly The Same (Remixes)
+Listen Here: https://open.spotify.com/track/429YCqWG4JybvcgTbnimQ4
 
 SPOTIFY
-Artist: Jeremih
-Song: Impatient
-Album: Late Nights: The Album
-Listen Here: https://open.spotify.com/track/3WjyiSbfR74pjWXQ3IaFKJ
+Artist: Aerosmith
+Song: The Hand That Feeds
+Album: Draw The Line
+Listen Here: https://open.spotify.com/track/3Z059VielBSOx73n5OVzth
 
 SPOTIFY
-Song: Love U Better (feat. Lil Wayne & The-Dream)
-Artist: Ty Dolla $ign
-Album: Beach House 3
-Listen Here: https://open.spotify.com/track/270aLuFCbX32hhBr8MQyPM
+Artist: Bitter End
+Song: The Hand That Feeds
+Album: Guilty As Charged
+Listen Here: https://open.spotify.com/track/0I4bBQ5Zo4k7Tgoa7hiZBa
 
-OMDB
-Title: Mr. Nobody
-Release Year: 2009
-IMDB Rating: 7.9
-Language: English, Mohawk
-Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
-Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+SPOTIFY
+Artist: Peter Gundry
+Song: The Hand That Feeds You
+Album: The Witching Hour
+Listen Here: https://open.spotify.com/track/4x02HGffYwW522IuizNoGQ
 
 OMDB
 Title: Fight Club
-IMDB Rating: 8.8
 Release Year: 1999
+IMDB Rating: 8.8
+Rotten Tomatoes Rating: 79%
 Language: English
 Plot: An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
 Actors: Edward Norton, Brad Pitt, Meat Loaf, Zach Grenier
 
-SPOTIFY
-Artist: The Beatles
-Song: I Am The Walrus - Remastered 2009
-Album: Magical Mystery Tour (Remastered)
-Listen Here: https://open.spotify.com/track/6Pq9MmkDQYZiiCDpxnvrf6
-
-SPOTIFY
-Artist: The Beatles
-Song: I Am The Walrus
-Album: Love
-Listen Here: https://open.spotify.com/track/7qUPlJTYxDRnpw3FKoWhm1
-
-SPOTIFY
-Artist: Bono
-Song: I Am The Walrus - From "Across The Universe" Soundtrack
-Album: Across The Universe
-Listen Here: https://open.spotify.com/track/2TMopbHDXxeKLejZrBjX7g
-
-SPOTIFY
-Artist: The Beatles
-Song: I Am The Walrus - Remastered
-Album: The Beatles 1967 - 1970 (Remastered)
-SPOTIFY
-Listen Here: https://open.spotify.com/track/01p2T2WtAGVbjnNhNHZfiA
-
-Artist: Oasis
-Song: I Am The Walrus [Live]
-Album: The Masterplan
-Listen Here: https://open.spotify.com/track/10HhVxBvdBkK1VHdYNZPQo
+OMDB
+Title: The Sisterhood of the Traveling Pants
+Release Year: 2005
+IMDB Rating: 6.5
+Rotten Tomatoes Rating: 77%
+Language: English, Greek, Spanish
+Plot: Four best girlfriends hatch a plan to stay connected with one another as their lives start off in different directions: they pass around a pair of secondhand jeans that fits each of their bodies perfectly.
+Actors: Amber Tamblyn, Alexis Bledel, America Ferrera, Blake Lively
 
