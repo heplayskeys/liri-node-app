@@ -22,16 +22,16 @@ You will be amazed!
 ## Sample Results
 
 1. #### concert-this
-![concert-this](/images/concert-this.png)
+![concert-this](/images/concert-this.PNG)
 
 2. #### spotify-this-song
-![spotify-this-song](/images/spotify-this-song.png)
+![spotify-this-song](/images/spotify-this-song.PNG)
 
 3. #### movie-this
-![movie-this](/images/movie-this.png)
+![movie-this](/images/movie-this.PNG)
 
 4. #### do-what-it-says
-![do-what-it-says](/images/do-what-it-says.png)
+![do-what-it-says](/images/do-what-it-says.PNG)
 
 
 ## BONUS!!!
@@ -40,4 +40,4 @@ As a bonus, the outputs to the command line are also written to a text file **"l
 
 *See the results, below!*
 
-![logText](/images/logText.png)
+![logText](/images/logText.PNG)
